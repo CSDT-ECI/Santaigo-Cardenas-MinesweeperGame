@@ -1,10 +1,10 @@
 # MinesweeperGame
 Online programming test: simple console application to emulate the classic puzzle game. 
 
-The application (back-end) is written in C#, using:
-- Visual Studio 2015 (Development Environment);
+The application is written in C#, using:
+- Visual Studio 2015 (IDE);
 - .NET 4.5.1 (Framework);
-- ASP.NET MVC 4 (Design Pattern);
+- ASP.NET MVC 4 (Architectural Pattern);
 - Prototype (Design Pattern).
 
 This solution allows adding some scripts in very easy way.
