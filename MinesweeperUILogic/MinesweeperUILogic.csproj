@@ -4,14 +4,13 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{DCC6BB8E-5173-40B1-9596-62F00D4917D8}</ProjectGuid>
+    <ProjectGuid>{23C47AC2-6D6E-4F4E-A8B0-716B4C2116BE}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>MinesweeperGame</RootNamespace>
-    <AssemblyName>MinesweeperGame</AssemblyName>
-    <TargetFrameworkVersion>v4.5.1</TargetFrameworkVersion>
+    <RootNamespace>MinesweeperUILogic</RootNamespace>
+    <AssemblyName>MinesweeperUILogic</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
-    <TargetFrameworkProfile />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -41,8 +40,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="IMinesweeperController.cs" />
-    <Compile Include="MinesweeperController.cs" />
+    <Compile Include="Controllers\MinesweeperController.cs" />
+    <Compile Include="Interfaces\IMinesweeperController.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

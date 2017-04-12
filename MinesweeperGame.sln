@@ -3,9 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Express 14 for Web
 VisualStudioVersion = 14.0.25420.1
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MinesweeperUILogic", "MinesweeperGame\MinesweeperUILogic.csproj", "{DCC6BB8E-5173-40B1-9596-62F00D4917D8}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MinesweeperBusinessLogic", "MinesweeperBusinessLogic\MinesweeperBusinessLogic.csproj", "{9B7CD769-4B29-43A7-96A5-0D7C20C7F67D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MinesweeperUILogic", "MinesweeperUILogic\MinesweeperUILogic.csproj", "{23C47AC2-6D6E-4F4E-A8B0-716B4C2116BE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MinesweeperGame", "MinesweeperGame\MinesweeperGame.csproj", "{692D592C-D1BF-471D-9757-7685B70BFD2E}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -13,14 +15,18 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{DCC6BB8E-5173-40B1-9596-62F00D4917D8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{DCC6BB8E-5173-40B1-9596-62F00D4917D8}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{DCC6BB8E-5173-40B1-9596-62F00D4917D8}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{DCC6BB8E-5173-40B1-9596-62F00D4917D8}.Release|Any CPU.Build.0 = Release|Any CPU
 		{9B7CD769-4B29-43A7-96A5-0D7C20C7F67D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{9B7CD769-4B29-43A7-96A5-0D7C20C7F67D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{9B7CD769-4B29-43A7-96A5-0D7C20C7F67D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{9B7CD769-4B29-43A7-96A5-0D7C20C7F67D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{23C47AC2-6D6E-4F4E-A8B0-716B4C2116BE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{23C47AC2-6D6E-4F4E-A8B0-716B4C2116BE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{23C47AC2-6D6E-4F4E-A8B0-716B4C2116BE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{23C47AC2-6D6E-4F4E-A8B0-716B4C2116BE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{692D592C-D1BF-471D-9757-7685B70BFD2E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{692D592C-D1BF-471D-9757-7685B70BFD2E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{692D592C-D1BF-471D-9757-7685B70BFD2E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{692D592C-D1BF-471D-9757-7685B70BFD2E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
