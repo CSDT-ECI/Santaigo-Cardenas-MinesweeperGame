@@ -1,0 +1,5 @@
+c:\users\daniele.crivello\documents\visual studio 2015\Projects\MinesweeperGame\MinesweeperBusinessLogic\bin\Release\MinesweeperBusinessLogic.dll
+c:\users\daniele.crivello\documents\visual studio 2015\Projects\MinesweeperGame\MinesweeperBusinessLogic\bin\Release\MinesweeperBusinessLogic.pdb
+c:\users\daniele.crivello\documents\visual studio 2015\Projects\MinesweeperGame\MinesweeperBusinessLogic\obj\Release\MinesweeperBusinessLogic.dll
+c:\users\daniele.crivello\documents\visual studio 2015\Projects\MinesweeperGame\MinesweeperBusinessLogic\obj\Release\MinesweeperBusinessLogic.pdb
+C:\Users\daniele.crivello\Documents\Visual Studio 2015\Projects\MinesweeperGame\MinesweeperBusinessLogic\obj\Release\MinesweeperBusinessLogic.csprojResolveAssemblyReference.cache

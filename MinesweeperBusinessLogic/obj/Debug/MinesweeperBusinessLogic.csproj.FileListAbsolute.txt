@@ -1,0 +1,4 @@
+c:\users\daniele.crivello\documents\visual studio 2015\Projects\MinesweeperGame\MinesweeperBusinessLogic\bin\Debug\MinesweeperBusinessLogic.dll
+c:\users\daniele.crivello\documents\visual studio 2015\Projects\MinesweeperGame\MinesweeperBusinessLogic\bin\Debug\MinesweeperBusinessLogic.pdb
+c:\users\daniele.crivello\documents\visual studio 2015\Projects\MinesweeperGame\MinesweeperBusinessLogic\obj\Debug\MinesweeperBusinessLogic.dll
+c:\users\daniele.crivello\documents\visual studio 2015\Projects\MinesweeperGame\MinesweeperBusinessLogic\obj\Debug\MinesweeperBusinessLogic.pdb
