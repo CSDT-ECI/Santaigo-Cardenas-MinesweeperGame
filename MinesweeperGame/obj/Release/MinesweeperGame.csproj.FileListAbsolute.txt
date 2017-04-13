@@ -1,9 +1,0 @@
-C:\Users\daniele.crivello\Documents\Visual Studio 2015\Projects\MinesweeperGame\MinesweeperGame\bin\Release\MinesweeperGame.exe
-C:\Users\daniele.crivello\Documents\Visual Studio 2015\Projects\MinesweeperGame\MinesweeperGame\bin\Release\MinesweeperGame.pdb
-C:\Users\daniele.crivello\Documents\Visual Studio 2015\Projects\MinesweeperGame\MinesweeperGame\bin\Release\MinesweeperUILogic.dll
-C:\Users\daniele.crivello\Documents\Visual Studio 2015\Projects\MinesweeperGame\MinesweeperGame\bin\Release\MinesweeperBusinessLogic.dll
-C:\Users\daniele.crivello\Documents\Visual Studio 2015\Projects\MinesweeperGame\MinesweeperGame\bin\Release\MinesweeperUILogic.pdb
-C:\Users\daniele.crivello\Documents\Visual Studio 2015\Projects\MinesweeperGame\MinesweeperGame\bin\Release\MinesweeperBusinessLogic.pdb
-C:\Users\daniele.crivello\Documents\Visual Studio 2015\Projects\MinesweeperGame\MinesweeperGame\obj\Release\MinesweeperGame.csprojResolveAssemblyReference.cache
-C:\Users\daniele.crivello\Documents\Visual Studio 2015\Projects\MinesweeperGame\MinesweeperGame\obj\Release\MinesweeperGame.exe
-C:\Users\daniele.crivello\Documents\Visual Studio 2015\Projects\MinesweeperGame\MinesweeperGame\obj\Release\MinesweeperGame.pdb
