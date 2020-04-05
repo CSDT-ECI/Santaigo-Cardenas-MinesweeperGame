@@ -18,12 +18,15 @@ It requires a PC with .NET installed.
 * You have installed the ASP.NET MVC 4 for Visual Studio 2010 SP1: https://www.microsoft.com/en-us/download/details.aspx?id=30683
 
 ## Contributors
+
 Thanks to the following people who have contributed to this project:
 
-@dannyc84
+* [@dannyc84](https://github.com/dannyc84)
 
 ## Contact
+
 If you want to contact me you can reach me at daniele.crivello84@libero.it.
 
 ## License
+
 This project uses the following license: [MIT](LICENSE.md).
