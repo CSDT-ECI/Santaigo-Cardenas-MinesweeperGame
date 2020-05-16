@@ -2,7 +2,7 @@
 
 MinesweeperGame is a simple console application to emulate the classic puzzle game, built following the requirements here: http://uva.onlinejudge.org/index.php?option=com_onlinejudge&Itemid=8&category=29&page=show_problem&problem=1130.
 
-## Game History
+## Minesweeper Game History
 
 More information here: https://en.wikipedia.org/wiki/Minesweeper_(video_game)
 
