@@ -22,9 +22,6 @@ jobs:
     - name: Build
       run: msbuild -p:Configuration=Release
 
-    - name: Run Minesweeper Game
-      run: dotnet run --project MinesweeperConsoleApp/MinesweeperConsoleApp.csproj
-
     - name: Test
       run: |
         # Aquí debes poner el comando para ejecutar tus pruebas unitarias
