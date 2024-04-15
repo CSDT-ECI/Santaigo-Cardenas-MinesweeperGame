@@ -13,14 +13,14 @@ jobs:
     steps:
     - uses: actions/checkout@v2
 
-    - name: Setup MSBuild
-      uses: microsoft/setup-msbuild@v1
+    - name: Setup .NET
+      uses: actions/setup-dotnet@v1
 
-    - name: Restore NuGet packages
-      run: msbuild -t:restore
+    - name: Restore dependencies
+      run: dotnet restore
 
     - name: Build
-      run: msbuild -p:Configuration=Release
+      run: dotnet build --configuration Release --no-restore
 
     - name: Test
       run: |
