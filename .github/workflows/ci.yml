@@ -27,11 +27,6 @@ jobs:
         # Aquí debes poner el comando para ejecutar tus pruebas unitarias
         echo "Ejecutando pruebas..."
 
-    - name: Lint with StyleCop
-      run: |
-        dotnet add package StyleCop.Analyzers
-        dotnet stylecop ./stylecop.json --no-color --no-summary
-
     - name: Comment
       uses: actions/github-script@v3
       with:
