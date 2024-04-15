@@ -17,7 +17,7 @@ jobs:
       uses: microsoft/setup-msbuild@v1
 
     - name: Restore NuGet packages
-      run: msbuild -t:restore
+      run: dotnet restore
 
     - name: Build
       run: msbuild -p:Configuration=Release
@@ -30,7 +30,7 @@ jobs:
     - name: Lint with StyleCop
       run: |
         dotnet tool install --global dotnet-stylecop
-        dotnet stylecop --configuration $(dirname $(pwd))/stylecop.json --no-color --no-summary
+        dotnet stylecop ./stylecop.json --no-color --no-summary
 
     - name: Comment
       uses: actions/github-script@v3
@@ -54,7 +54,7 @@ jobs:
           }
         github-token: ${{ secrets.GITHUB_TOKEN }}
 
-  owasp-check:
+  ubuntu-build:
     needs: build
     runs-on: ubuntu-latest
     steps:
