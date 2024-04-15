@@ -8,19 +8,19 @@ on:
 
 jobs:
   build:
-    runs-on: ubuntu-latest
+    runs-on: windows-latest
 
     steps:
     - uses: actions/checkout@v2
 
-    - name: Setup .NET
-      uses: actions/setup-dotnet@v1
+    - name: Setup MSBuild
+      uses: microsoft/setup-msbuild@v1
 
-    - name: Restore dependencies
-      run: dotnet restore
+    - name: Restore NuGet packages
+      run: msbuild -t:restore
 
     - name: Build
-      run: dotnet build --configuration Release --no-restore
+      run: msbuild -p:Configuration=Release
 
     - name: Test
       run: |
@@ -28,12 +28,8 @@ jobs:
         echo "Ejecutando pruebas..."
 
     - name: OWASP Dependency Check
-      uses: dependency-check/Dependency-Check_Action@1.1.0
-      id: Depcheck
-      with:
-        project: 'test'
-        path: '.'
-        format: 'HTML'
+      run: |
+        docker run --rm -v ${{ github.workspace }}:/src owasp/dependency-check:latest --scan /src --format HTML --out /src/DependencyCheckReport.html
         
     - name: Lint with StyleCop
       run: dotnet build --configuration Release
