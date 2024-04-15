@@ -28,7 +28,7 @@ jobs:
         echo "Ejecutando pruebas..."
 
     - name: OWASP Dependency Check
-      uses: dependency-check/DependencyCheck_Action@v2
+      uses: dependency-check/Dependency-Check_Action@1.1.0
       with:
         scanPath: '.'
         format: 'ALL'
