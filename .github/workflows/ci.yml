@@ -29,12 +29,12 @@ jobs:
 
     - name: OWASP Dependency Check
       uses: dependency-check/Dependency-Check_Action@1.1.0
+      id: Depcheck
       with:
-        scanPath: '.'
-        format: 'ALL'
-        failBuildOnCVSS: '7'
-        suppressionPath: 'dependency-check-suppression.xml'
-
+        project: 'test'
+        path: '.'
+        format: 'HTML'
+        
     - name: Lint with StyleCop
       run: dotnet build --configuration Release
 
