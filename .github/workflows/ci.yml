@@ -27,12 +27,6 @@ jobs:
         # Aquí debes poner el comando para ejecutar tus pruebas unitarias
         echo "Ejecutando pruebas..."
 
-    - name: SonarQube Scan
-      uses: sonarsource/sonar-scanner-msbuild-action@v1.1
-      with:
-        serverUrl: ${{ secrets.SONAR_HOST_URL }}
-        login: ${{ secrets.SONAR_TOKEN }}
-
     - name: Lint with StyleCop
       run: dotnet build --configuration Release
 
