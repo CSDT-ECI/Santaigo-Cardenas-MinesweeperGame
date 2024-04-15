@@ -27,6 +27,14 @@ jobs:
         # Aquí debes poner el comando para ejecutar tus pruebas unitarias
         echo "Ejecutando pruebas..."
 
+    - name: OWASP Dependency Check
+      uses: dependency-check/DependencyCheck_Action@v2
+      with:
+        scanPath: '.'
+        format: 'ALL'
+        failBuildOnCVSS: '7'
+        suppressionPath: 'dependency-check-suppression.xml'
+
     - name: Lint with StyleCop
       run: dotnet build --configuration Release
 
@@ -35,7 +43,7 @@ jobs:
       with:
         script: |
           github.issues.createComment({
-            issue_number: context.issue.number,
+            issue_number: context.pullRequest.number,
             owner: context.repo.owner,
             repo: context.repo.repo,
             body: '🎉 Your CI tests passed!'
