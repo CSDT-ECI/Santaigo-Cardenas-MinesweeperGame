@@ -30,12 +30,6 @@ jobs:
     - name: Lint with StyleCop
       run: dotnet build --configuration Release
 
-    - name: SonarCloud Scan
-      uses: sonarsource/sonarcloud-github-action@master
-      env:
-        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
-
     - name: Comment
       uses: actions/github-script@v3
       with:
@@ -69,3 +63,9 @@ jobs:
         project: 'test'
         path: '.'
         format: 'HTML'
+        
+    - name: SonarCloud Scan
+      uses: sonarsource/sonarcloud-github-action@master
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
