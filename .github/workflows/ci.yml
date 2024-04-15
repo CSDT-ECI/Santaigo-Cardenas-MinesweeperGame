@@ -34,11 +34,22 @@ jobs:
       uses: actions/github-script@v3
       with:
         script: |
-          github.issues.createComment({
-            owner: context.repo.owner,
-            repo: context.repo.repo,
-            body: '🎉 Your CI tests passed!'
-          })
+          const comment = '🎉 Tu CI ha pasado las pruebas!'
+          if (github.event_name == 'push') {
+            github.rest.repos.createCommitComment({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              commit_sha: github.sha,
+              body: comment
+            })
+          } else if (github.event_name == 'pull_request') {
+            github.rest.issues.createComment({
+              issue_number: context.issue.number,
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              body: comment
+            })
+          }
         github-token: ${{ secrets.GITHUB_TOKEN }}
 
   owasp-check:
