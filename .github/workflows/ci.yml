@@ -1,0 +1,72 @@
+name: CI
+
+on:
+  push:
+    branches: [ main, CI ]
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  build:
+    runs-on: windows-latest
+
+    steps:
+    - uses: actions/checkout@v2
+
+    - name: Setup MSBuild
+      uses: microsoft/setup-msbuild@v1
+
+    - name: Restore NuGet packages
+      run: dotnet restore
+
+    - name: Build
+      run: msbuild -p:Configuration=Release
+
+    - name: Test
+      run: |
+        # Aquí debes poner el comando para ejecutar tus pruebas unitarias
+        echo "Ejecutando pruebas..."
+
+    - name: Comment
+      uses: actions/github-script@v3
+      with:
+        script: |
+          const comment = '🎉 Tu CI ha pasado las pruebas!'
+          if (github.event_name == 'push') {
+            github.rest.repos.createCommitComment({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              commit_sha: github.sha,
+              body: comment
+            })
+          } else if (github.event_name == 'pull_request') {
+            github.rest.issues.createComment({
+              issue_number: context.issue.number,
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              body: comment
+            })
+          }
+        github-token: ${{ secrets.GITHUB_TOKEN }}
+
+  ubuntu-build:
+    needs: build
+    runs-on: ubuntu-latest
+    steps:
+    - name: OWASP Dependency Check
+      uses: dependency-check/Dependency-Check_Action@1.1.0
+      id: Depcheck
+      with:
+        project: 'test'
+        path: '.'
+        format: 'HTML'
+
+    - name: SonarCloud Scan
+      uses: sonarsource/sonarcloud-github-action@master
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
+      with:
+        args: >
+          -Dsonar.organization=csdt-eci
+          -Dsonar.projectKey=CSDT-ECI_Santiago-Cardenas-MinesweeperGame
